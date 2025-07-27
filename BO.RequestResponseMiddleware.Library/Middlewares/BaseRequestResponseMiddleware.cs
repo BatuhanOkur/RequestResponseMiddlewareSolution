@@ -1,13 +1,5 @@
-﻿using BO.RequestResponseMiddleware.Library.Interfaces;
-using BO.RequestResponseMiddleware.Library.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.IO;
-using System;
-using System.Collections.Generic;
+﻿using Microsoft.IO;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BO.RequestResponseMiddleware.Library.Middlewares
 {

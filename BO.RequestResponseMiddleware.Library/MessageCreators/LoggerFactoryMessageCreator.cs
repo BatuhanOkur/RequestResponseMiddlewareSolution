@@ -1,12 +1,4 @@
-﻿using BO.RequestResponseMiddleware.Library.Interfaces;
-using BO.RequestResponseMiddleware.Library.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BO.RequestResponseMiddleware.Library.MessageCreators
+﻿namespace BO.RequestResponseMiddleware.Library.MessageCreators
 {
     internal class LoggerFactoryMessageCreator : BaseLogMessageCreator, ILogMessageCreator
     {
