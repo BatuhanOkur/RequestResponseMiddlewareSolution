@@ -14,7 +14,7 @@ namespace BO.RequestResponseMiddleware.Library.LogWriters
     {
         private readonly ILogger logger;
         private readonly LoggingOptions loggingOptions;
-        public ILogMessageCreator MessageCreator { get; set; }
+        public ILogMessageCreator MessageCreator { get;}
 
         internal LoggerFactoryLogWriter(ILoggerFactory loggerFactory, LoggingOptions loggingOptions)
         {
