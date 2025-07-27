@@ -15,7 +15,6 @@ namespace BO.RequestResponseMiddleware.Library.Middlewares
     {
         private readonly RequestDelegate next;
         private readonly ILogWriter logWriter;
-        private readonly RequestResponseOptions reqResOptions;
         private readonly RecyclableMemoryStreamManager recyclableMemoryStreamManager;
 
         public BaseRequestResponseMiddleware(RequestDelegate next, ILogWriter logWriter)
@@ -51,6 +50,8 @@ namespace BO.RequestResponseMiddleware.Library.Middlewares
             };
 
             await logWriter.Write(result);
+
+            return result;
         }
 
         private static string ReadStreamInChunks(Stream stream)
