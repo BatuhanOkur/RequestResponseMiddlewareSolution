@@ -12,13 +12,11 @@ namespace BO.RequestResponseMiddleware.Library.Middlewares
     public class HandlerRequestResponseLoggingMiddleware : BaseRequestResponseMiddleware
     {
         private readonly Func<RequestResponseContext, Task> reqResHandler;
-        private readonly ILogWriter logWriter;
 
         public HandlerRequestResponseLoggingMiddleware(RequestDelegate next, Func<RequestResponseContext, Task> reqResHandler, ILogWriter logWriter)
             :base(next, logWriter)
         {
             this.reqResHandler = reqResHandler;
-            this.logWriter = logWriter;
         }
 
         public async Task Invoke(HttpContext context)
