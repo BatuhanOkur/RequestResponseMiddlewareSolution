@@ -11,7 +11,7 @@ namespace BO.RequestResponseMiddleware.Library.Models
 {
     public class RequestResponseContext
     {
-        private readonly HttpContext context;
+        internal readonly HttpContext context;
         public RequestResponseContext(HttpContext context) 
         { 
             this.context = context;
