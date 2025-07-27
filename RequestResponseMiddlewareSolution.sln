@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BO.RequestResponseMiddleware.Library", "BO.RequestResponseMiddleware.Library\BO.RequestResponseMiddleware.Library.csproj", "{383193B0-50FA-4366-97DF-CC00663E9318}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4A251D49-6069-4271-A5EF-34E2D4C37B36}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
