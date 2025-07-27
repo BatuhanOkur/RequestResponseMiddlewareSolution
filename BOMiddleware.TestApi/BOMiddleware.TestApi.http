@@ -1,0 +1,6 @@
+@BOMiddleware.TestApi_HostAddress = http://localhost:5258
+
+GET {{BOMiddleware.TestApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

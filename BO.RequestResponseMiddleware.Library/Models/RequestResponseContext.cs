@@ -12,10 +12,10 @@
         public string ResponseBody { get; set; }
         
         [JsonIgnore]
-        public TimeSpan ResponseCreationTime { get; set; }
+        public TimeSpan? ResponseCreationTime { get; set; }
         
         public string FormattedCreationTime =>
-            FormattedCreationTime is null ? "00:00.000" :
+            ResponseCreationTime is null ? "00:00.000" :
             string.Format("{0:mm\\:ss\\.fff}", ResponseCreationTime);
 
         public Uri Url => BuildUrl();

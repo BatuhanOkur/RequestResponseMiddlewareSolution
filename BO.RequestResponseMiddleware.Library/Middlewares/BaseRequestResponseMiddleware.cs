@@ -13,6 +13,7 @@ namespace BO.RequestResponseMiddleware.Library.Middlewares
         {
             this.next = next;
             this.logWriter = logWriter;
+            recyclableMemoryStreamManager = new RecyclableMemoryStreamManager();
         }
 
         protected async Task<RequestResponseContext> BaseMiddlewareInvoke(HttpContext context)
